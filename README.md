@@ -1,4 +1,4 @@
-# cryogen-org https://versions.deps.co/iomonad/cryogen-org
+# cryogen-org [![Dependencies Status](https://versions.deps.co/iomonad/cryogen-org/status.svg)](https://versions.deps.co/iomonad/cryogen-org)
 
 A Clojure library designed to ... well, that part is up to you.
 
