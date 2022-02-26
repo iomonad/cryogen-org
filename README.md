@@ -1,14 +1,15 @@
 # cryogen-org [![Dependencies Status](https://versions.deps.co/iomonad/cryogen-org/status.svg)](https://versions.deps.co/iomonad/cryogen-org)
 
-A Clojure library designed to ... well, that part is up to you.
+An Orgmode backend for [Cryogen](http://cryogenweb.org/) blog engine
 
 ## Usage
 
-FIXME
+Install latest version in your Cryogen project, Orgmode files
+will be compiled out the box in the ad-hoc `org` content folder.
 
 ## License
 
-Copyright © 2022 FIXME
+Copyright © 2022 iomonad
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
