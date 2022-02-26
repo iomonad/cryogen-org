@@ -5,7 +5,7 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [cryogen-core        "0.3.2"]
-                 [org-parser          "0.1.4"]]
+                 [clj-org             "0.0.2"]]
   :profiles {:dev {:source-paths ["dev"]
                    :resource-paths ["resources" "dev-resources"]}}
   :repl-options {:init-ns user})

@@ -1,5 +1,22 @@
 (ns user
-  (:require [org-parser.core :as o]))
+  (:require [clojure.java.io :as io]
+            [hiccup.core :refer [html]]
+            [clj-org.org :refer [parse-org]]))
+
 
 (comment
-  (o/read-str (slurp "/home/iomonad/org/perso.org")))
+  (some->> (io/resource "sample.org")
+           slurp
+           parse-org
+           :content
+           html))
+
+(comment (html (:content (parse-org "#+TITLE: This is an Org Mode file.
+
+* This is the outer section
+** This is an inner section
+Inner section body -- /with italic text/!  And *bold text* too.
+
+- Plain List Item 1
+- Plain List Item 2
+[[http://eigenhombre.com][A link to a Web site]]"))))
