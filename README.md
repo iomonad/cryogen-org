@@ -1,4 +1,5 @@
-# cryogen-org [![Dependencies Status](https://versions.deps.co/iomonad/cryogen-org/status.svg)](https://versions.deps.co/iomonad/cryogen-org)
+# cryogen-org [![Dependencies Status](https://versions.deps.co/iomonad/cryogen-org/status.svg)](https://versions.deps.co/iomonad/cryogen-org) [![Clojars Project](https://img.shields.io/clojars/v/io.trosa/cryogen-org.svg)](https://clojars.org/io.trosa/cryogen-org)
+
 
 An Orgmode backend for [Cryogen](http://cryogenweb.org/) blog engine
 
