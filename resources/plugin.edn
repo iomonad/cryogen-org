@@ -1,0 +1,2 @@
+{:description "Org-Mode file parser"
+ :init cryogen-org.core/init}
