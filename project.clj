@@ -6,6 +6,14 @@
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [cryogen-core        "0.4.1"]
                  [clj-org             "0.0.2"]]
+  :deploy-repositories [["snapshots" {:url "https://clojars.org/repo"
+                                      :username :env/clojars_username
+                                      :password :env/clojars_password
+                                      :sign-releases false}]
+                        ["releases"  {:url "https://clojars.org/repo"
+                                      :username :env/clojars_username
+                                      :password :env/clojars_password
+                                      :sign-releases false}]]
   :profiles {:dev {:source-paths ["dev"]
                    :resource-paths ["resources" "dev-resources"]}}
   :repl-options {:init-ns user})
