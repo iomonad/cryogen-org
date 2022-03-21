@@ -9,7 +9,8 @@
            slurp
            parse-org
            :content
-           html))
+           html
+           clojure.pprint/pprint))
 
 (comment (html (:content (parse-org "#+TITLE: This is an Org Mode file.
 
@@ -19,4 +20,12 @@ Inner section body -- /with italic text/!  And *bold text* too.
 
 - Plain List Item 1
 - Plain List Item 2
-[[http://eigenhombre.com][A link to a Web site]]"))))
+[[http://eigenhombre.com][A link to a Web site]]
+
+
+* My Code
+
+#+BEGIN_SRC emacs-lisp
+  (defun org-xor (a b)
+#+END_SRC
+"))))
