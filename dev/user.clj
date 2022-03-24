@@ -1,16 +1,19 @@
 (ns user
   (:require [clojure.java.io :as io]
             [hiccup.core :refer [html]]
+            [org-parser.parser :as p]
+            [instaparse.transform :as it]
+            [com.rpl.specter :as sp]
             [clj-org.org :refer [parse-org]]))
-
 
 (comment
   (some->> (io/resource "sample.org")
            slurp
            parse-org
-           :content
-           html
-           clojure.pprint/pprint))
+           :content)
+  (some->> (io/resource "sample.org")
+           slurp
+           p/parse))
 
 (comment (html (:content (parse-org "#+TITLE: This is an Org Mode file.
 
@@ -25,7 +28,7 @@ Inner section body -- /with italic text/!  And *bold text* too.
 
 * My Code
 
-#+BEGIN_SRC emacs-lisp
+#+begin_src emacs-lisp
   (defun org-xor (a b)
-#+END_SRC
+#+end_src
 "))))

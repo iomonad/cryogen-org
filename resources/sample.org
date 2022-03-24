@@ -36,14 +36,14 @@
 
 ** Block Elements
 
-#+BEGIN_SRC clojure
+#+begin_src clojure
 (ns organum.core
   (:require [clojure.java.io :as io]
             [clojure.walk :as w]
             [hiccup.core :as h]
             [instaparse.core :as insta]
             [cuerdas.core :as s]))
-#+END_SRC
+#+end_src
 
 * Links
 
